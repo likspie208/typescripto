@@ -13,11 +13,7 @@ var Student = /** @class */ (function () {
     return Student;
 }());
 function greeter(person) {
-    var she = new Student(person.firstName, "K", person.lastName);
-    return "Hello " + she.firstName + " " + she.lastName;
+    return "Hello " + person.firstName + " " + person.lastName;
 }
-var user = {
-    firstName: "Lopa",
-    lastName: "Mudra"
-};
+var user = new Student("Lopa", "K", "Mudra");
 document.body.innerHTML = greeter(user);

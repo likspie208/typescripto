@@ -23,13 +23,9 @@ interface Person {
 }
 
 function greeter(person: Person) {
-  let she = new Student(person.firstName, "K", person.lastName)
-  return "Hello " + she.firstName + " " + she.lastName;
+  return "Hello " + person.firstName + " " + person.lastName;
 }
 
-let user = {
-  firstName: "Lopa",
-  lastName: "Mudra"
-};
+let user = new Student("Lopa", "K", "Mudra");
 
 document.body.innerHTML = greeter(user);
